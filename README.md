@@ -6,7 +6,9 @@
 [![License](https://img.shields.io/cocoapods/l/SAConfettiView.svg?style=flat)](http://cocoapods.org/pods/SAConfettiView)
 [![Platform](https://img.shields.io/cocoapods/p/SAConfettiView.svg?style=flat)](http://cocoapods.org/pods/SAConfettiView)
 
-<img src="https://cloud.githubusercontent.com/assets/11940172/11791210/f97b6bd8-a2da-11e5-9083-b131fa796373.gif" alt="confetti" width="473.6" height="198">
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/11940172/11791210/f97b6bd8-a2da-11e5-9083-b131fa796373.gif" alt="confetti" width="473.6" height="198">
+</p>
 
 It's raining confetti! SAConfettiView is the quickest way to add confetti to your application and make users feel rewarded. Written in Swift, SAConfettiView is a subclass of UIView and can be customized for different colors and levels of intensity. 
 
