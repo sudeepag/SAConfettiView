@@ -8,15 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		19C9A68F2C75EB9AD130412AF79003A9 /* Pods-SAConfettiView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C6CED2FBBD410800ABE5E4CA944616E /* Pods-SAConfettiView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2411808AA7FF526B40044ACBA47A0A2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
+		253A4CC3A8ECD0FCFBA3584D2AC2F842 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */; };
 		2EFDA6B8F0B37F8A3456664A3107970A /* Pods-SAConfettiView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 275DEC6D94808D6479BE70597CD6FE32 /* Pods-SAConfettiView_Tests-dummy.m */; };
-		43A6A5447574DCF1229E6763453E8862 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		4B8F015541FC3724FCEA05F523F13E4F /* Pods-SAConfettiView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F952375C163F86C986B06AD2A34EA2B /* Pods-SAConfettiView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B0A9F4AA073FBB79E8BCBCC93D5DDBA /* SAConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE8BD2139DE108AB778501DC7F91208 /* SAConfettiView.swift */; };
 		615F3CB3ECFECA6D0E214DE15C0BE56C /* SAConfettiView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 381A927F84BCC708F019B7A181DE6C24 /* SAConfettiView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A73C2C2CBFA5E53CDB01AA8A9A4519D6 /* SAConfettiView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5623F8675DA1E9C0D221A8A49284C95 /* SAConfettiView-dummy.m */; };
-		B63B4CED54C78179996915D3FD02178E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		ABA2CA0F617A5D034009EAC737968CFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */; };
+		B63B4CED54C78179996915D3FD02178E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
 		B80E5BC4718AC81592CD02387B38BE95 /* Pods-SAConfettiView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BC26EBF2BB1E22B69EE4490D41AF1B /* Pods-SAConfettiView_Example-dummy.m */; };
-		D7F2A6751619E97FE2D51FA8EBABC140 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		C0A9D4891C1F554100B61D86 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C0A9D4871C1F554100B61D86 /* .gitkeep */; };
+		C0A9D48A1C1F554100B61D86 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A9D4881C1F554100B61D86 /* confetti.png */; };
+		D7F2A6751619E97FE2D51FA8EBABC140 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
 		E243921E7A39209303DFC8202E77CCEA /* SAConfettiView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 985B8C041BCC18674B78F3F574AC5CE8 /* SAConfettiView.bundle */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +58,6 @@
 		33BA93C7462150EBA0DCDE14132580CF /* Pods-SAConfettiView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SAConfettiView_Example-resources.sh"; sourceTree = "<group>"; };
 		381A927F84BCC708F019B7A181DE6C24 /* SAConfettiView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAConfettiView-umbrella.h"; sourceTree = "<group>"; };
 		3C881DA3E759BC88D78B3F6B313870EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3FAD79F891E73C27D68F23EF0E2F9307 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		460159317902E3BD61BFFE4DC7488889 /* Pods-SAConfettiView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SAConfettiView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		47E6ECE1D7B0410EE11E355979A7855D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,23 +67,38 @@
 		6C6CED2FBBD410800ABE5E4CA944616E /* Pods-SAConfettiView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SAConfettiView_Example-umbrella.h"; sourceTree = "<group>"; };
 		779472074CB1756DB10E08585DFF1779 /* SAConfettiView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAConfettiView.xcconfig; sourceTree = "<group>"; };
 		871361338185FBF868944C5AA452A776 /* Pods-SAConfettiView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SAConfettiView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		91413329813FA6FE5A78842159E69621 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		985B8C041BCC18674B78F3F574AC5CE8 /* SAConfettiView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAConfettiView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		A515290629475DC971B90FE965D5DDEC /* Pods-SAConfettiView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SAConfettiView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AAFA0F6664979CC64FB2CADFD7F21411 /* Pods-SAConfettiView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SAConfettiView_Tests-resources.sh"; sourceTree = "<group>"; };
 		AF603D52D8DC00624561A0639B2E3A46 /* Pods-SAConfettiView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SAConfettiView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B42E07E0F0C0A5A7EF950D7F4BBFCBBB /* Pods-SAConfettiView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SAConfettiView_Tests.modulemap"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C0A9D4871C1F554100B61D86 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		C0A9D4881C1F554100B61D86 /* confetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confetti.png; sourceTree = "<group>"; };
 		C4973B68510353854FDC0B16D5DDA965 /* Pods-SAConfettiView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SAConfettiView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CBDA70B42A045257AF4D4E4EAA511E33 /* Pods-SAConfettiView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SAConfettiView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		D5623F8675DA1E9C0D221A8A49284C95 /* SAConfettiView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAConfettiView-dummy.m"; sourceTree = "<group>"; };
 		D9BC26EBF2BB1E22B69EE4490D41AF1B /* Pods-SAConfettiView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SAConfettiView_Example-dummy.m"; sourceTree = "<group>"; };
+		D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		E510E2F06E20B7B1A7026FB816D34FE5 /* SAConfettiView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAConfettiView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		F4F93A4AB475FC34CFDEFB23EFAC21CE /* SAConfettiView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAConfettiView-prefix.pch"; sourceTree = "<group>"; };
 		F6F899FA6D0D05D6FAD2A9D5FC6A8EAA /* Pods_SAConfettiView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAConfettiView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE8BD2139DE108AB778501DC7F91208 /* SAConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAConfettiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2B32D1193C0B5B162E65983F41093427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2411808AA7FF526B40044ACBA47A0A2A /* Foundation.framework in Frameworks */,
+				253A4CC3A8ECD0FCFBA3584D2AC2F842 /* QuartzCore.framework in Frameworks */,
+				ABA2CA0F617A5D034009EAC737968CFB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8872039F35974A891FB901D2FF3BFFB4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -96,14 +114,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B61A7AE2A2BBD670ABBC9495A8F03C19 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43A6A5447574DCF1229E6763453E8862 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DFA5A1C19B669C081E47D4B067A9B769 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,9 +125,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA23025FEDA7F7FE2AACB2532BD80D14 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2306BE0BF8AA3EF9725F65F03FFA8BF9 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
+				C0A9D4861C1F554100B61D86 /* Assets */,
 				312AE5D911ADB5595093B27940500972 /* Classes */,
 			);
 			path = Pod;
@@ -147,7 +166,7 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				C1CEF9D98130AE60EEE6801FBDBCA951 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
 				4AAE28E50AE717738972647BE1E4044E /* Products */,
 				F196E59D51CB2B593FC1DBF0872E6DE1 /* Targets Support Files */,
 			);
@@ -181,20 +200,13 @@
 			path = "Target Support Files/Pods-SAConfettiView_Example";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		C0A9D4861C1F554100B61D86 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+				C0A9D4871C1F554100B61D86 /* .gitkeep */,
+				C0A9D4881C1F554100B61D86 /* confetti.png */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		C0EB63EC5238A90284D26362BCD9012E /* Support Files */ = {
@@ -217,6 +229,16 @@
 				9FE231702959D27E4170B01D2CCD01AC /* SAConfettiView */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DA23025FEDA7F7FE2AACB2532BD80D14 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				91413329813FA6FE5A78842159E69621 /* Foundation.framework */,
+				E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */,
+				D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		E21633547A43E841EAE96E85F0908F1A /* Pods-SAConfettiView_Tests */ = {
@@ -298,7 +320,7 @@
 			buildConfigurationList = 39AB80BDBE90EE50FD72A4F90E1FFC31 /* Build configuration list for PBXNativeTarget "SAConfettiView" */;
 			buildPhases = (
 				88F1A55C4DD6C2D157C432A73BE39C25 /* Sources */,
-				B61A7AE2A2BBD670ABBC9495A8F03C19 /* Frameworks */,
+				2B32D1193C0B5B162E65983F41093427 /* Frameworks */,
 				D16B9CFD1FAF93CFFB5D00F4DD7B65E5 /* Resources */,
 				AA7EF0266F194BE0701624F8E7137EB3 /* Headers */,
 			);
@@ -383,6 +405,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E243921E7A39209303DFC8202E77CCEA /* SAConfettiView.bundle in Resources */,
+				C0A9D4891C1F554100B61D86 /* .gitkeep in Resources */,
+				C0A9D48A1C1F554100B61D86 /* confetti.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
