@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'SAConfettiView_Example', :exclusive => true do
+  pod "SAConfettiView", :path => "../"
+end
+
+target 'SAConfettiView_Tests', :exclusive => true do
+  pod "SAConfettiView", :path => "../"
+
+  
+end
