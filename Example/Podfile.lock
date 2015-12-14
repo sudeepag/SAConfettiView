@@ -1,0 +1,14 @@
+PODS:
+  - SAConfettiView (0.1.0)
+
+DEPENDENCIES:
+  - SAConfettiView (from `../`)
+
+EXTERNAL SOURCES:
+  SAConfettiView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SAConfettiView: ef953d6018ed3f6b5e1ae21c40af9c123c417cd2
+
+COCOAPODS: 0.39.0

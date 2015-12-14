@@ -1,0 +1,6 @@
+framework module SAConfettiView {
+  umbrella header "SAConfettiView-umbrella.h"
+
+  export *
+  module * { export * }
+}

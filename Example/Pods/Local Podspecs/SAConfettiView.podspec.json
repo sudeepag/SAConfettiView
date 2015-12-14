@@ -1,0 +1,25 @@
+{
+  "name": "SAConfettiView",
+  "version": "0.1.0",
+  "summary": "A short description of SAConfettiView.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SAConfettiView",
+  "license": "MIT",
+  "authors": {
+    "Sudeep Agarwal": "sudeep135@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SAConfettiView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "SAConfettiView": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
