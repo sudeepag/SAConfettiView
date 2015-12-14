@@ -38,11 +38,12 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = SAConfettiView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* SAConfettiView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAConfettiView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7450FB73560E57B8393D5C10 /* SAConfettiView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SAConfettiView.podspec; path = ../SAConfettiView.podspec; sourceTree = "<group>"; };
 		94586F106E860E0E2EF9880F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C0A9D4831C1F479A00B61D86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C36566EC09F287C27CE60AF8 /* Pods_SAConfettiView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAConfettiView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF150C3860EABC34C776774B /* Pods-SAConfettiView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAConfettiView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAConfettiView_Tests/Pods-SAConfettiView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D474C95A962AD6F762D56988 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -96,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* SAConfettiView_Example.app */,
-				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				607FACE51AFB9204008FA782 /* SAConfettiView_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +154,7 @@
 		EACBC9F94D6B3C947F368762 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0A9D4831C1F479A00B61D86 /* QuartzCore.framework */,
 				47C3CC6F6F22B7354518E524 /* Pods_SAConfettiView_Example.framework */,
 				C36566EC09F287C27CE60AF8 /* Pods_SAConfettiView_Tests.framework */,
 			);
@@ -200,7 +202,7 @@
 			);
 			name = SAConfettiView_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* SAConfettiView_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */

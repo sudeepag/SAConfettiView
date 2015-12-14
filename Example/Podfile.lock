@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SAConfettiView: ef953d6018ed3f6b5e1ae21c40af9c123c417cd2
+  SAConfettiView: c3c533d20b0f2bf4af968124c4434f6681f099f4
 
 COCOAPODS: 0.39.0
