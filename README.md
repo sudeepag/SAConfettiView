@@ -24,7 +24,7 @@ And then run:
 `$ pod install`
 
 #### Manual Installation
-To manually install SACountingLabel, simply add `SAConfettiView.swift` to your project.
+To manually install SAConfettiView, simply add `SAConfettiView.swift` to your project.
 
 ## Usage
 
