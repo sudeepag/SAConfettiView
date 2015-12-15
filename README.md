@@ -52,6 +52,22 @@ The intensity refers to how many particles are generated and how quickly they fa
 confettiView.intensity = 0.75
 ```
 
+#### Starting
+
+To start the confetti, use
+
+``` swift
+confettiView.startConfetti()
+```
+
+#### Stopping
+
+To stop the confetti, use
+
+``` swift
+confettiView.stopConfetti()
+```
+
 ## License
 
 Copyright (c) 2015 Sudeep Agarwal
