@@ -35,6 +35,13 @@ class ViewController: UIViewController {
         // Set intensity (from 0 - 1, default intensity is 0.5)
         confettiView.intensity = 0.5
         
+        // Set type
+        confettiView.type = .Diamond
+        
+        // For custom image
+        // confettiView.type = .Custom
+        // confettiView.customImage = UIImage(named: "diamond")
+        
         // Add subview
         view.addSubview(confettiView)
     }

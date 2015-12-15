@@ -10,10 +10,20 @@ import UIKit
 import QuartzCore
 
 public class SAConfettiView: UIView {
+    
+    public enum ConfettiType {
+        case Confetti
+        case Triangle
+        case Star
+        case Diamond
+        case Custom
+    }
 
     var emitter: CAEmitterLayer!
-    public var colors = [UIColor.redColor(), UIColor.greenColor(), UIColor.blueColor()]
-    public var intensity: Float = 0.5
+    public var colors: [UIColor]!
+    public var intensity: Float!
+    public var type: ConfettiType!
+    public var customImage: UIImage?
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -21,6 +31,13 @@ public class SAConfettiView: UIView {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
+        colors = [UIColor(red:0.95, green:0.40, blue:0.27, alpha:1.0),
+                  UIColor(red:1.00, green:0.78, blue:0.36, alpha:1.0),
+                  UIColor(red:0.48, green:0.78, blue:0.64, alpha:1.0),
+                  UIColor(red:0.30, green:0.76, blue:0.85, alpha:1.0),
+                  UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
+        intensity = 0.5
+        type = .Confetti
     }
     
     public func startConfetti() {
@@ -43,6 +60,34 @@ public class SAConfettiView: UIView {
         emitter.birthRate = 0
     }
     
+    func imageForType(type: ConfettiType) -> UIImage? {
+        
+        var fileName: String!
+        
+        switch type {
+        case .Confetti:
+            fileName = "confetti"
+        case .Triangle:
+            fileName = "triangle"
+        case .Star:
+            fileName = "star"
+        case .Diamond:
+            fileName = "diamond"
+        case .Custom:
+            return customImage
+        }
+        
+        let path = NSBundle(forClass: SAConfettiView.self).pathForResource("SAConfettiView", ofType: "bundle")
+        let bundle = NSBundle(path: path!)
+        let imagePath = bundle?.pathForResource(fileName, ofType: "png")
+        let url = NSURL(fileURLWithPath: imagePath!)
+        let data = NSData(contentsOfURL: url)
+        if let data = data {
+            return UIImage(data: data)!
+        }
+        return nil
+    }
+    
     func confettiWithColor(color: UIColor) -> CAEmitterCell {
         let confetti = CAEmitterCell()
         confetti.birthRate = 6.0 * intensity
@@ -57,7 +102,7 @@ public class SAConfettiView: UIView {
         confetti.spinRange = CGFloat(4.0 * intensity)
         confetti.scaleRange = CGFloat(intensity)
         confetti.scaleSpeed = CGFloat(-0.1 * intensity)
-        confetti.contents = UIImage(named: "confetti")?.CGImage
+        confetti.contents = imageForType(type)!.CGImage
         return confetti
     }
 
