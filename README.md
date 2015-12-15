@@ -36,6 +36,12 @@ Creating a SAConfettiView is the same as creating a UIView:
 let confettiView = SAConfettiView(frame: self.view.bounds)
 ```
 
+Don't forget to add the subview!
+
+```swift
+self.view.addSubview(confettiView)
+```
+
 ### Types
 
 Pick one of the preconfigured types of confetti with the `.type` property, or create your own by providing a custom image. This property defaults to the `.Confetti` type.
