@@ -39,8 +39,7 @@ class ViewController: UIViewController {
         confettiView.type = .Diamond
         
         // For custom image
-        // confettiView.type = .Custom
-        // confettiView.customImage = UIImage(named: "diamond")
+        // confettiView.type = .Custom(UIImage(named: "diamond")!)
         
         // Add subview
         view.addSubview(confettiView)
