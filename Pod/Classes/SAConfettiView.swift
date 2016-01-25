@@ -16,7 +16,7 @@ public class SAConfettiView: UIView {
         case Triangle
         case Star
         case Diamond
-        case Custom(UIImage)
+        case Image(UIImage)
     }
 
     var emitter: CAEmitterLayer!
@@ -72,7 +72,7 @@ public class SAConfettiView: UIView {
             fileName = "star"
         case .Diamond:
             fileName = "diamond"
-        case let .Custom(customImage):
+        case let .Image(customImage):
             return customImage
         }
         
