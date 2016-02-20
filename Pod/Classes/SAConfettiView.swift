@@ -57,7 +57,7 @@ public class SAConfettiView: UIView {
     }
     
     public func stopConfetti() {
-        emitter.birthRate = 0
+        emitter?.birthRate = 0
     }
     
     func imageForType(type: ConfettiType) -> UIImage? {
