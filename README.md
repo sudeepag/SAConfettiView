@@ -120,10 +120,15 @@ confettiView.stopConfetti()
 
 ## Change Log
 
+### 1.0.7
+* Use view's `width` property instead of `center` to fix bug in UIScrollView
+  [debug29](https://github.com/debug29)
+  [#4](https://github.com/sudeepag/SAConfettiView/issues/4)
+
 ### 1.0.6
 * Prevent error when calling `.stopConfetti()` before `.startConfetti()`
   [ahmads](https://github.com/ahmads)
-  [#1](https://github.com/sudeepag/SAConfettiView/pull/7)
+  [#7](https://github.com/sudeepag/SAConfettiView/pull/7)
 
 ### 1.0.5
 * Add Storyboard support
