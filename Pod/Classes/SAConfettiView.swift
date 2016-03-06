@@ -47,7 +47,7 @@ public class SAConfettiView: UIView {
     public func startConfetti() {
         emitter = CAEmitterLayer()
         
-        emitter.emitterPosition = CGPoint(x: center.x, y: 0)
+        emitter.emitterPosition = CGPoint(x: frame.size.width / 2.0, y: 0)
         emitter.emitterShape = kCAEmitterLayerLine
         emitter.emitterSize = CGSize(width: frame.size.width, height: 1)
         
