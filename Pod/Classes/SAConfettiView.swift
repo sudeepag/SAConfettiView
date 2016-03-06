@@ -16,14 +16,13 @@ public class SAConfettiView: UIView {
         case Triangle
         case Star
         case Diamond
-        case Custom
+        case Image(UIImage)
     }
 
     var emitter: CAEmitterLayer!
     public var colors: [UIColor]!
     public var intensity: Float!
     public var type: ConfettiType!
-    public var customImage: UIImage?
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -73,7 +72,7 @@ public class SAConfettiView: UIView {
             fileName = "star"
         case .Diamond:
             fileName = "diamond"
-        case .Custom:
+        case let .Image(customImage):
             return customImage
         }
         
