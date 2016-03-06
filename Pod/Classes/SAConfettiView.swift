@@ -81,15 +81,12 @@ public class SAConfettiView: UIView {
             return customImage
         }
         
-        let path = NSBundle(forClass: SAConfettiView.self).pathForResource("SAConfettiView", ofType: "bundle")
-        let bundle = NSBundle(path: path!)
-        let imagePath = bundle?.pathForResource(fileName, ofType: "png")
-        let url = NSURL(fileURLWithPath: imagePath!)
-        let data = NSData(contentsOfURL: url)
-        if let data = data {
-            return UIImage(data: data)!
+        let image = UIImage(named: fileName)
+        if (image != nil) {
+            return image
+        } else {
+            return nil
         }
-        return nil
     }
     
     func confettiWithColor(color: UIColor) -> CAEmitterCell {
