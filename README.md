@@ -120,6 +120,11 @@ confettiView.stopConfetti()
 
 ## Change Log
 
+### 1.0.6
+* Prevent error when calling `.stopConfetti()` before `.startConfetti()`
+  [ahmads](https://github.com/ahmads)
+  [#1](https://github.com/sudeepag/SAConfettiView/pull/7)
+
 ### 1.0.5
 * Add Storyboard support
   [SlaunchaMan](https://github.com/SlaunchaMan)
