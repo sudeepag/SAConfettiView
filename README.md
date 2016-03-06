@@ -122,9 +122,13 @@ confettiView.stopConfetti()
 
 ### 1.0.5
 * Add Storyboard support
+  [SlaunchaMan](https://github.com/SlaunchaMan)
+  [#1](https://github.com/sudeepag/SAConfettiView/pull/1)
 
 ### 1.0.4
 * Replace `.Custom` with `.Image(UIImage)` for easier customization of confetti image
+  [gmertk](https://github.com/gmertk)
+  [#2](https://github.com/sudeepag/SAConfettiView/pull/2)
 
 ## License
 
