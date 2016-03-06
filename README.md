@@ -118,6 +118,14 @@ To stop the confetti, use
 confettiView.stopConfetti()
 ```
 
+## Change Log
+
+### 1.0.5
+* Add Storyboard support
+
+### 1.0.4
+* Replace `.Custom` with `.Image(UIImage)` for easier customization of confetti image
+
 ## License
 
 Copyright (c) 2015 Sudeep Agarwal
