@@ -78,15 +78,12 @@ confettiView.type = .Star
 confettiView.type = .Diamond
 ```
 
-##### `.Custom`
+##### `.Image`
 
-![custom](https://cloud.githubusercontent.com/assets/11940172/11819363/5f4f0dba-a39a-11e5-826b-d198113f50dd.gif)
-
-To set a custom image, use the `.customImage` property.
+![image](https://cloud.githubusercontent.com/assets/11940172/11819363/5f4f0dba-a39a-11e5-826b-d198113f50dd.gif)
 
 ```swift
-confettiView.type = .Custom
-confettiView.customImage = UIImage(named: "smiley")
+confettiView.type = .Image(UIImage(named: "smiley"))
 ```
 
 ### Colors
