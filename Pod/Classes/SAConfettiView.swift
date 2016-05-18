@@ -27,13 +27,16 @@ public class SAConfettiView: UIView {
                          UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
     public var intensity: Float =  0.5
     public var type: ConfettiType!
-    public func startConfetti() {
-
     private var active = false
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
         emitter.emitterPosition = CGPoint(x: frame.size.width / 2.0, y: 0)
         emitter.emitterShape = kCAEmitterLayerLine
         emitter.emitterSize = CGSize(width: frame.size.width, height: 1)
+    }
 
+    public func startConfetti() {
         var cells = [CAEmitterCell]()
         for color in colors {
             cells.append(confettiWithColor(color))
