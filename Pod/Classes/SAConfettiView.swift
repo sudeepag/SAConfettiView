@@ -19,36 +19,17 @@ public class SAConfettiView: UIView {
         case Image(UIImage)
     }
 
-    var emitter: CAEmitterLayer!
-    public var colors: [UIColor]!
-    public var intensity: Float!
+    let emitter = CAEmitterLayer()
+    public var colors = [UIColor(red:0.95, green:0.40, blue:0.27, alpha:1.0),
+                         UIColor(red:1.00, green:0.78, blue:0.36, alpha:1.0),
+                         UIColor(red:0.48, green:0.78, blue:0.64, alpha:1.0),
+                         UIColor(red:0.30, green:0.76, blue:0.85, alpha:1.0),
+                         UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
+    public var intensity: Float =  0.5
     public var type: ConfettiType!
-    private var active :Bool!
-
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
-    }
-
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-    }
-
-    func setup() {
-        colors = [UIColor(red:0.95, green:0.40, blue:0.27, alpha:1.0),
-            UIColor(red:1.00, green:0.78, blue:0.36, alpha:1.0),
-            UIColor(red:0.48, green:0.78, blue:0.64, alpha:1.0),
-            UIColor(red:0.30, green:0.76, blue:0.85, alpha:1.0),
-            UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
-        intensity = 0.5
-        type = .Confetti
-        active = false
-    }
-
     public func startConfetti() {
-        emitter = CAEmitterLayer()
 
+    private var active = false
         emitter.emitterPosition = CGPoint(x: frame.size.width / 2.0, y: 0)
         emitter.emitterShape = kCAEmitterLayerLine
         emitter.emitterSize = CGSize(width: frame.size.width, height: 1)
@@ -64,7 +45,7 @@ public class SAConfettiView: UIView {
     }
 
     public func stopConfetti() {
-        emitter?.birthRate = 0
+        emitter.birthRate = 0
         active = false
     }
 
