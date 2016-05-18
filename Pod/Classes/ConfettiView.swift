@@ -1,5 +1,5 @@
 //
-//  SAConfettiView.swift
+//  ConfettiView.swift
 //  Pods
 //
 //  Created by Sudeep Agarwal on 12/14/15.
@@ -9,7 +9,7 @@
 import UIKit
 import QuartzCore
 
-public class SAConfettiView: UIView {
+public class ConfettiView: UIView {
     let emitter = CAEmitterLayer()
     public var colors = [UIColor(red:0.95, green:0.40, blue:0.27, alpha:1.0),
                          UIColor(red:1.00, green:0.78, blue:0.36, alpha:1.0),
