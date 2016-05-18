@@ -13,11 +13,12 @@
 		2EFDA6B8F0B37F8A3456664A3107970A /* Pods-SAConfettiView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 275DEC6D94808D6479BE70597CD6FE32 /* Pods-SAConfettiView_Tests-dummy.m */; };
 		4B8F015541FC3724FCEA05F523F13E4F /* Pods-SAConfettiView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F952375C163F86C986B06AD2A34EA2B /* Pods-SAConfettiView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D5F5CBCE6689715DC23B8B159D41560 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = A343F53F34BEC8D695F8B656B2610A1D /* diamond.png */; };
-		5B0A9F4AA073FBB79E8BCBCC93D5DDBA /* SAConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5868DEEA8C40254B5624ECA9D4E4D603 /* SAConfettiView.swift */; };
+		5B0A9F4AA073FBB79E8BCBCC93D5DDBA /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5868DEEA8C40254B5624ECA9D4E4D603 /* ConfettiView.swift */; };
 		615F3CB3ECFECA6D0E214DE15C0BE56C /* SAConfettiView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F50AAA6280FC3A99F08284EFBD971C3 /* SAConfettiView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A73C2C2CBFA5E53CDB01AA8A9A4519D6 /* SAConfettiView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4D625470F162654CE33A8D89D57ADE /* SAConfettiView-dummy.m */; };
 		A77D19109E1E6017CD16D1F4BD7DF7FF /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = A3D3748BE936C386B80C915855865C65 /* triangle.png */; };
 		ABA2CA0F617A5D034009EAC737968CFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */; };
+		AF8803E91CEC76270002CBE4 /* ConfettiType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8803E81CEC76260002CBE4 /* ConfettiType.swift */; };
 		B63B4CED54C78179996915D3FD02178E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
 		B80E5BC4718AC81592CD02387B38BE95 /* Pods-SAConfettiView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BC26EBF2BB1E22B69EE4490D41AF1B /* Pods-SAConfettiView_Example-dummy.m */; };
 		D7F2A6751619E97FE2D51FA8EBABC140 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
@@ -64,7 +65,7 @@
 		3FAD79F891E73C27D68F23EF0E2F9307 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		460159317902E3BD61BFFE4DC7488889 /* Pods-SAConfettiView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SAConfettiView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		47E6ECE1D7B0410EE11E355979A7855D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5868DEEA8C40254B5624ECA9D4E4D603 /* SAConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAConfettiView.swift; sourceTree = "<group>"; };
+		5868DEEA8C40254B5624ECA9D4E4D603 /* ConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
 		58991F250A9AD6D88C5E6F2177C55B42 /* Pods-SAConfettiView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SAConfettiView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5F50AAA6280FC3A99F08284EFBD971C3 /* SAConfettiView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAConfettiView-umbrella.h"; sourceTree = "<group>"; };
 		64083DF31741E413F544673043422955 /* Pods-SAConfettiView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SAConfettiView_Example.modulemap"; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		AAFA0F6664979CC64FB2CADFD7F21411 /* Pods-SAConfettiView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SAConfettiView_Tests-resources.sh"; sourceTree = "<group>"; };
 		AE4D625470F162654CE33A8D89D57ADE /* SAConfettiView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAConfettiView-dummy.m"; sourceTree = "<group>"; };
 		AF603D52D8DC00624561A0639B2E3A46 /* Pods-SAConfettiView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SAConfettiView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AF8803E81CEC76260002CBE4 /* ConfettiType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiType.swift; sourceTree = "<group>"; };
 		B42E07E0F0C0A5A7EF950D7F4BBFCBBB /* Pods-SAConfettiView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SAConfettiView_Tests.modulemap"; sourceTree = "<group>"; };
 		B90B1C64FBF1F9485F7A9C6A61E761C3 /* SAConfettiView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SAConfettiView.modulemap; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -192,7 +194,8 @@
 		8B5B763A33C834BAA1B20A1DF722BEAD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5868DEEA8C40254B5624ECA9D4E4D603 /* SAConfettiView.swift */,
+				5868DEEA8C40254B5624ECA9D4E4D603 /* ConfettiView.swift */,
+				AF8803E81CEC76260002CBE4 /* ConfettiType.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -456,7 +459,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A73C2C2CBFA5E53CDB01AA8A9A4519D6 /* SAConfettiView-dummy.m in Sources */,
-				5B0A9F4AA073FBB79E8BCBCC93D5DDBA /* SAConfettiView.swift in Sources */,
+				5B0A9F4AA073FBB79E8BCBCC93D5DDBA /* ConfettiView.swift in Sources */,
+				AF8803E91CEC76270002CBE4 /* ConfettiType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
