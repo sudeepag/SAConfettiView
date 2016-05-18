@@ -27,7 +27,7 @@ public class SAConfettiView: UIView {
                          UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
     public var intensity: Float =  0.5
     public var type: ConfettiType!
-    private var active = false
+    private(set) var active = false
     
     public override func layoutSubviews() {
         super.layoutSubviews()
@@ -97,9 +97,5 @@ public class SAConfettiView: UIView {
         confetti.scaleSpeed = CGFloat(-0.1 * intensity)
         confetti.contents = imageForType(type)!.CGImage
         return confetti
-    }
-
-    public func isActive() -> Bool {
-    		return self.active
     }
 }
