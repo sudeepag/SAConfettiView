@@ -28,6 +28,8 @@ public class ConfettiView: UIView {
     }
 
     public func startConfetti() {
+        guard !active else { return }
+        
         var cells = [CAEmitterCell]()
         for color in colors {
             cells.append(confettiWithColor(color))
@@ -40,6 +42,8 @@ public class ConfettiView: UIView {
     }
 
     public func stopConfetti() {
+        guard active else { return }
+        
         emitter.birthRate = 0
         active = false
     }
