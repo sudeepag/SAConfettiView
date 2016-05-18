@@ -41,7 +41,8 @@ public class SAConfettiView: UIView {
         for color in colors {
             cells.append(confettiWithColor(color))
         }
-
+        
+        emitter.beginTime = CACurrentMediaTime()
         emitter.emitterCells = cells
         layer.addSublayer(emitter)
         active = true
