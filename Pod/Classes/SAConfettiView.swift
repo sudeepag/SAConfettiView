@@ -23,7 +23,7 @@ public class SAConfettiView: UIView {
     public var colors: [UIColor]!
     public var intensity: Float!
     public var type: ConfettiType!
-    private var active :Bool!
+    private(set) var active :Bool!
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -55,7 +55,9 @@ public class SAConfettiView: UIView {
 
         var cells = [CAEmitterCell]()
         for color in colors {
-            cells.append(confettiWithColor(color))
+            if let confetti = confetti(with: color) {
+                cells.append(confetti)
+            }
         }
 
         emitter.emitterCells = cells
@@ -68,9 +70,8 @@ public class SAConfettiView: UIView {
         active = false
     }
 
-    func imageForType(type: ConfettiType) -> UIImage? {
-
-        var fileName: String!
+    func image(for type: ConfettiType) -> UIImage? {
+        var fileName: String
 
         switch type {
         case .Confetti:
@@ -85,23 +86,29 @@ public class SAConfettiView: UIView {
             return customImage
         }
 
-        let path = NSBundle(forClass: SAConfettiView.self).pathForResource("SAConfettiView", ofType: "bundle")
-        let bundle = NSBundle(path: path!)
-        let imagePath = bundle?.pathForResource(fileName, ofType: "png")
-        let url = NSURL(fileURLWithPath: imagePath!)
-        let data = NSData(contentsOfURL: url)
-        if let data = data {
-            return UIImage(data: data)!
+        guard let path = Bundle(for: SAConfettiView.self).path(forResource: "SAConfettiView", ofType: "bundle"),
+            let bundle = Bundle(path: path) else {
+            return nil
         }
-        return nil
+
+        let imagePath = bundle.path(forResource: fileName, ofType: "png")
+        let url = URL(fileURLWithPath: imagePath!)
+        guard let data = try? Data(contentsOf: url) else {
+            return nil
+        }
+
+        return UIImage(data: data)
     }
 
-    func confettiWithColor(color: UIColor) -> CAEmitterCell {
+    func confetti(with color: UIColor) -> CAEmitterCell? {
+        guard let image = image(for: type) else {
+            return nil
+        }
         let confetti = CAEmitterCell()
         confetti.birthRate = 6.0 * intensity
         confetti.lifetime = 14.0 * intensity
         confetti.lifetimeRange = 0
-        confetti.color = color.CGColor
+        confetti.color = color.cgColor
         confetti.velocity = CGFloat(350.0 * intensity)
         confetti.velocityRange = CGFloat(80.0 * intensity)
         confetti.emissionLongitude = CGFloat(M_PI)
@@ -110,11 +117,7 @@ public class SAConfettiView: UIView {
         confetti.spinRange = CGFloat(4.0 * intensity)
         confetti.scaleRange = CGFloat(intensity)
         confetti.scaleSpeed = CGFloat(-0.1 * intensity)
-        confetti.contents = imageForType(type)!.CGImage
+        confetti.contents = image.cgImage
         return confetti
-    }
-
-    public func isActive() -> Bool {
-    		return self.active
     }
 }
