@@ -65,7 +65,9 @@ public class SAConfettiView: UIView {
 
         var cells = [CAEmitterCell]()
         for color in colors {
-            cells.append(confettiWithColor(color))
+            for type in types {
+                cells.append(confettiWithColor(color: color, type: type))
+            }
         }
 
         emitter.emitterCells = cells
@@ -106,11 +108,7 @@ public class SAConfettiView: UIView {
         return nil
     }
     
-    func randomType() -> ConfettiType {
-        return types[Int(arc4random_uniform(UInt32(types.count)))]
-    }
-
-    func confettiWithColor(color: UIColor) -> CAEmitterCell {
+    func confettiWithColor(color color: UIColor, type: ConfettiType) -> CAEmitterCell {
         let confetti = CAEmitterCell()
         confetti.birthRate = 6.0 * intensity
         confetti.lifetime = 14.0 * intensity
@@ -124,7 +122,7 @@ public class SAConfettiView: UIView {
         confetti.spinRange = CGFloat(4.0 * intensity)
         confetti.scaleRange = CGFloat(intensity)
         confetti.scaleSpeed = CGFloat(-0.1 * intensity)
-        confetti.contents = imageForType(randomType())!.CGImage
+        confetti.contents = imageForType(type)!.CGImage
         return confetti
     }
 
