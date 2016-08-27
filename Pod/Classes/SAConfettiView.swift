@@ -22,9 +22,19 @@ public class SAConfettiView: UIView {
     var emitter: CAEmitterLayer!
     public var colors: [UIColor]!
     public var intensity: Float!
-    public var type: ConfettiType!
+    public var types: [ConfettiType]!
     private var active :Bool!
-
+    
+    @available(*, deprecated=1.0)
+    public var type: ConfettiType! {
+        set {
+            types = [ newValue ]
+        }
+        get {
+            return types.first!
+        }
+    }
+    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
@@ -42,7 +52,7 @@ public class SAConfettiView: UIView {
             UIColor(red:0.30, green:0.76, blue:0.85, alpha:1.0),
             UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
         intensity = 0.5
-        type = .Confetti
+        types = [ .Confetti ]
         active = false
     }
 
@@ -55,7 +65,9 @@ public class SAConfettiView: UIView {
 
         var cells = [CAEmitterCell]()
         for color in colors {
-            cells.append(confettiWithColor(color))
+            for type in types {
+                cells.append(confettiWithColor(color: color, type: type))
+            }
         }
 
         emitter.emitterCells = cells
@@ -95,8 +107,8 @@ public class SAConfettiView: UIView {
         }
         return nil
     }
-
-    func confettiWithColor(color: UIColor) -> CAEmitterCell {
+    
+    func confettiWithColor(color color: UIColor, type: ConfettiType) -> CAEmitterCell {
         let confetti = CAEmitterCell()
         confetti.birthRate = 6.0 * intensity
         confetti.lifetime = 14.0 * intensity
