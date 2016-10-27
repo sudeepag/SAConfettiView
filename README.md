@@ -118,22 +118,7 @@ To stop the confetti, use
 confettiView.stopConfetti()
 ```
 
-### Status
-
-To check if the confetti is active and currently being displayed, use
-
-``` swift
-confettiView.isActive()
-```
-
-Returns `true` if it is being displayed, and `false` if it is not.
-
 ## Change Log
-
-### 1.0.8
-* Add `isActive()` method to determine if the confetti is currently active
-  [Shakarang](https://github.com/Shakarang)
-  [#9](https://github.com/sudeepag/SAConfettiView/issues/9)
 
 ### 1.0.7
 * Use view's `width` property instead of `center` to fix bug in UIScrollView
