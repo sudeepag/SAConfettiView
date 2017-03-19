@@ -157,7 +157,7 @@ Returns `true` if it is being displayed, and `false` if it is not.
 
 ## License
 
-Copyright (c) 2015 Sudeep Agarwal
+Copyright (c) 2015 - 2017 Sudeep Agarwal
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
