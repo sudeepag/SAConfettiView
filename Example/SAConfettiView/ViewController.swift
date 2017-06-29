@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     var isRainingConfetti = false
     @IBOutlet var confettiStatus: UILabel!
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
     
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         confettiView.intensity = 0.5
         
         // Set type
-        confettiView.type = .Diamond
+        confettiView.type = .diamond
         
         // For custom image
         // confettiView.type = .Image(UIImage(named: "diamond")!)
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         view.addSubview(confettiView)
     }
 
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if (isRainingConfetti) {
             // Stop confetti
             confettiView.stopConfetti()
