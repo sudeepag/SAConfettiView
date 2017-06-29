@@ -18,7 +18,7 @@ SAConfettiView is available through [CocoaPods](http://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```swift
-pod "SAConfettiView"
+pod 'SAConfettiView', :git => 'https://github.com/gokhanakkurt/SAConfettiView.git', :branch => 'swift3'
 ```
 
 And then run:
@@ -44,54 +44,54 @@ self.view.addSubview(confettiView)
 
 ### Types
 
-Pick one of the preconfigured types of confetti with the `.type` property, or create your own by providing a custom image. This property defaults to the `.Confetti` type.
+Pick one of the preconfigured types of confetti with the `.type` property, or create your own by providing a custom image. This property defaults to the `.confetti` type.
 
-##### `.Confetti`
+##### `.confetti`
 
 ![confetti](https://cloud.githubusercontent.com/assets/11940172/11819440/c9db329e-a39a-11e5-9284-b0171bee0f24.gif)
 
 ```swift
-confettiView.type = .Confetti
+confettiView.type = .confetti
 ```
 
-##### `.Triangle`
+##### `.triangle`
 
 ![triangle](https://cloud.githubusercontent.com/assets/11940172/11819211/9b8b758a-a399-11e5-8ed3-2eb92f633628.gif)
 
 ```swift
-confettiView.type = .Triangle
+confettiView.type = .triangle
 ```
 
-##### `.Star`
+##### `.star`
 
 ![star](https://cloud.githubusercontent.com/assets/11940172/11819401/90a2188a-a39a-11e5-8a03-ddca3fb52e72.gif)
 
 ```swift
-confettiView.type = .Star
+confettiView.type = .star
 ```
 
-##### `.Diamond`
+##### `.diamond`
 
 ![diamond](https://cloud.githubusercontent.com/assets/11940172/11819275/f1c83c08-a399-11e5-8d40-85e9a1879526.gif)
 
 ```swift
-confettiView.type = .Diamond
+confettiView.type = .diamond
 ```
 
-##### `.Image`
+##### `.image`
 
 ![image](https://cloud.githubusercontent.com/assets/11940172/11819363/5f4f0dba-a39a-11e5-826b-d198113f50dd.gif)
 
 ```swift
-confettiView.type = .Image(UIImage(named: "smiley"))
+confettiView.type = .image(UIImage(named: "smiley"))
 ```
 
 ### Colors
 
-Set the colors of the confetti with the `.colors` property. This property has a default value of multiple colors. 
+Set the colors of the confetti with the `.colors` property. This property has a default value of multiple colors.
 
 ``` swift
-confettiView.colors = [UIColor.redColor(), UIColor.greenColor(), UIColor.blueColor()]
+confettiView.colors = [UIColor.red, UIColor.green, UIColor.blue]
 ```
 
 ### Intensity
