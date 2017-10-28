@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         confettiView.intensity = 0.5
         
         // Set type
-        confettiView.type = .Diamond
+        confettiView.type = .diamond
         
         // For custom image
         // confettiView.type = .Image(UIImage(named: "diamond")!)

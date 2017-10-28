@@ -12,11 +12,11 @@ import QuartzCore
 public class SAConfettiView: UIView {
 
     public enum ConfettiType {
-        case Confetti
-        case Triangle
-        case Star
-        case Diamond
-        case Image(UIImage)
+        case confetti
+        case triangle
+        case star
+        case diamond
+        case image(UIImage)
     }
 
     var emitter: CAEmitterLayer!
@@ -42,7 +42,7 @@ public class SAConfettiView: UIView {
             UIColor(red:0.30, green:0.76, blue:0.85, alpha:1.0),
             UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
         intensity = 0.5
-        type = .Confetti
+        type = .confetti
         active = false
     }
 
@@ -73,15 +73,15 @@ public class SAConfettiView: UIView {
         var fileName: String!
 
         switch type {
-        case .Confetti:
+        case .confetti:
             fileName = "confetti"
-        case .Triangle:
+        case .triangle:
             fileName = "triangle"
-        case .Star:
+        case .star:
             fileName = "star"
-        case .Diamond:
+        case .diamond:
             fileName = "diamond"
-        case let .Image(customImage):
+        case let .image(customImage):
             return customImage
         }
 
