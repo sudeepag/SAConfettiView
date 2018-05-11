@@ -1,11 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'SAConfettiView_Example', :exclusive => true do
+target 'SAConfettiView_Example' do
   pod "SAConfettiView", :path => "../"
 end
 
-target 'SAConfettiView_Tests', :exclusive => true do
+target 'SAConfettiView_Tests' do
   pod "SAConfettiView", :path => "../"
 
   
