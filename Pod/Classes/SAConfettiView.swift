@@ -37,10 +37,10 @@ public class SAConfettiView: UIView {
 
     func setup() {
         colors = [UIColor(red:0.95, green:0.40, blue:0.27, alpha:1.0),
-            UIColor(red:1.00, green:0.78, blue:0.36, alpha:1.0),
-            UIColor(red:0.48, green:0.78, blue:0.64, alpha:1.0),
-            UIColor(red:0.30, green:0.76, blue:0.85, alpha:1.0),
-            UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
+                  UIColor(red:1.00, green:0.78, blue:0.36, alpha:1.0),
+                  UIColor(red:0.48, green:0.78, blue:0.64, alpha:1.0),
+                  UIColor(red:0.30, green:0.76, blue:0.85, alpha:1.0),
+                  UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
         intensity = 0.5
         type = .confetti
         active = false
@@ -50,7 +50,7 @@ public class SAConfettiView: UIView {
         emitter = CAEmitterLayer()
 
         emitter.emitterPosition = CGPoint(x: frame.size.width / 2.0, y: 0)
-        emitter.emitterShape = kCAEmitterLayerLine
+        emitter.emitterShape = CAEmitterLayerEmitterShape.line
         emitter.emitterSize = CGSize(width: frame.size.width, height: 1)
 
         var cells = [CAEmitterCell]()
@@ -117,6 +117,6 @@ public class SAConfettiView: UIView {
     }
 
     public func isActive() -> Bool {
-    		return self.active
+        return self.active
     }
 }
