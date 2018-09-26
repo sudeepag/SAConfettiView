@@ -12,11 +12,11 @@ import QuartzCore
 public class SAConfettiView: UIView {
 
     public enum ConfettiType {
-        case confetti
-        case triangle
-        case star
-        case diamond
-        case image(UIImage)
+        case Confetti
+        case Triangle
+        case Star
+        case Diamond
+        case Image(UIImage)
     }
 
     var emitter: CAEmitterLayer!
@@ -37,12 +37,12 @@ public class SAConfettiView: UIView {
 
     func setup() {
         colors = [UIColor(red:0.95, green:0.40, blue:0.27, alpha:1.0),
-            UIColor(red:1.00, green:0.78, blue:0.36, alpha:1.0),
-            UIColor(red:0.48, green:0.78, blue:0.64, alpha:1.0),
-            UIColor(red:0.30, green:0.76, blue:0.85, alpha:1.0),
-            UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
+                  UIColor(red:1.00, green:0.78, blue:0.36, alpha:1.0),
+                  UIColor(red:0.48, green:0.78, blue:0.64, alpha:1.0),
+                  UIColor(red:0.30, green:0.76, blue:0.85, alpha:1.0),
+                  UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
         intensity = 0.5
-        type = .confetti
+        type = .Confetti
         active = false
     }
 
@@ -73,27 +73,25 @@ public class SAConfettiView: UIView {
         var fileName: String!
 
         switch type {
-        case .confetti:
+        case .Confetti:
             fileName = "confetti"
-        case .triangle:
+        case .Triangle:
             fileName = "triangle"
-        case .star:
+        case .Star:
             fileName = "star"
-        case .diamond:
+        case .Diamond:
             fileName = "diamond"
-        case let .image(customImage):
+        case let .Image(customImage):
             return customImage
         }
 
         let path = Bundle(for: SAConfettiView.self).path(forResource: "SAConfettiView", ofType: "bundle")
         let bundle = Bundle(path: path!)
         let imagePath = bundle?.path(forResource: fileName, ofType: "png")
-        let url = URL(fileURLWithPath: imagePath!)
-        do {
-            let data = try Data(contentsOf: url)
+        let url = NSURL(fileURLWithPath: imagePath!)
+        let data = NSData(contentsOf: url as URL)
+        if let data = data as Data? {
             return UIImage(data: data)
-        } catch {
-            print(error)
         }
         return nil
     }
@@ -106,8 +104,8 @@ public class SAConfettiView: UIView {
         confetti.color = color.cgColor
         confetti.velocity = CGFloat(350.0 * intensity)
         confetti.velocityRange = CGFloat(80.0 * intensity)
-        confetti.emissionLongitude = CGFloat(Double.pi)
-        confetti.emissionRange = CGFloat(Double.pi)
+        confetti.emissionLongitude = CGFloat(CGFloat.pi)
+        confetti.emissionRange = CGFloat(CGFloat.pi / 4)
         confetti.spin = CGFloat(3.5 * intensity)
         confetti.spinRange = CGFloat(4.0 * intensity)
         confetti.scaleRange = CGFloat(intensity)
@@ -117,6 +115,6 @@ public class SAConfettiView: UIView {
     }
 
     public func isActive() -> Bool {
-    		return self.active
+        return self.active
     }
 }
