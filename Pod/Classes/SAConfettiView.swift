@@ -12,11 +12,11 @@ import QuartzCore
 public class SAConfettiView: UIView {
 
     public enum ConfettiType {
-        case Confetti
-        case Triangle
-        case Star
-        case Diamond
-        case Image(UIImage)
+        case confetti
+        case triangle
+        case star
+        case diamond
+        case image(UIImage)
     }
 
     var emitter: CAEmitterLayer!
@@ -42,7 +42,7 @@ public class SAConfettiView: UIView {
                   UIColor(red:0.30, green:0.76, blue:0.85, alpha:1.0),
                   UIColor(red:0.58, green:0.39, blue:0.55, alpha:1.0)]
         intensity = 0.5
-        type = .Confetti
+        type = .confetti
         active = false
     }
 
@@ -73,26 +73,30 @@ public class SAConfettiView: UIView {
         var fileName: String!
 
         switch type {
-        case .Confetti:
+        case .confetti:
             fileName = "confetti"
-        case .Triangle:
+        case .triangle:
             fileName = "triangle"
-        case .Star:
+        case .star:
             fileName = "star"
-        case .Diamond:
+        case .diamond:
             fileName = "diamond"
-        case let .Image(customImage):
+        case let .image(customImage):
             return customImage
         }
 
         let path = Bundle(for: SAConfettiView.self).path(forResource: "SAConfettiView", ofType: "bundle")
         let bundle = Bundle(path: path!)
-        let imagePath = bundle?.path(forResource: fileName, ofType: "png")
-        let url = NSURL(fileURLWithPath: imagePath!)
-        let data = NSData(contentsOf: url as URL)
-        if let data = data as Data? {
-            return UIImage(data: data)
+        
+        
+        if let imagePath = bundle?.path(forResource: fileName, ofType: "png") {
+            let url = URL(fileURLWithPath: imagePath)
+            let data = try? Data(contentsOf: url)
+            if let imageData = data {
+                return UIImage(data: imageData)
+            }
         }
+        
         return nil
     }
 
@@ -104,8 +108,8 @@ public class SAConfettiView: UIView {
         confetti.color = color.cgColor
         confetti.velocity = CGFloat(350.0 * intensity)
         confetti.velocityRange = CGFloat(80.0 * intensity)
-        confetti.emissionLongitude = CGFloat(CGFloat.pi)
-        confetti.emissionRange = CGFloat(CGFloat.pi / 4)
+        confetti.emissionLongitude = .pi
+        confetti.emissionRange = .pi / 4
         confetti.spin = CGFloat(3.5 * intensity)
         confetti.spinRange = CGFloat(4.0 * intensity)
         confetti.scaleRange = CGFloat(intensity)
