@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SAConfettiView"
-  s.version          = "0.1.8"
+  s.version          = "0.1.9"
   s.summary          = "Confetti! Who doesn't like confetti?'"
 
 # This description is used to generate tags and improve search results.
