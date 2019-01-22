@@ -27,8 +27,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1538B58F21F757FA00D44C5C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0E724590F4C35092E008EF3B /* Pods-SAConfettiView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAConfettiView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAConfettiView_Tests/Pods-SAConfettiView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1538B58521F757FA00D44C5C /* SAConfettiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAConfettiView.h; sourceTree = "<group>"; };
+		1538B58621F757FA00D44C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1538B59021F7583800D44C5C /* SAConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SAConfettiView.swift; path = ../Pod/Classes/SAConfettiView.swift; sourceTree = "<group>"; };
+		1538B59321F7584D00D44C5C /* confetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confetti.png; sourceTree = "<group>"; };
+		1538B59421F7584D00D44C5C /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		1538B59521F7584D00D44C5C /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle.png; sourceTree = "<group>"; };
+		1538B59621F7584D00D44C5C /* diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamond.png; sourceTree = "<group>"; };
+		1538B59721F7584D00D44C5C /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		1538B59821F7585A00D44C5C /* diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = diamond.png; path = ../Pod/Assets/diamond.png; sourceTree = "<group>"; };
+		1538B59921F7585A00D44C5C /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = triangle.png; path = ../Pod/Assets/triangle.png; sourceTree = "<group>"; };
+		1538B59A21F7585A00D44C5C /* confetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = confetti.png; path = ../Pod/Assets/confetti.png; sourceTree = "<group>"; };
+		1538B59B21F7585A00D44C5C /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = ../Pod/Assets/star.png; sourceTree = "<group>"; };
 		527CC9C61E839C395A4626FF /* Pods-SAConfettiView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAConfettiView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAConfettiView_Tests/Pods-SAConfettiView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5770964109E6DCD8CBA0AD66 /* Pods_SAConfettiView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAConfettiView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* SAConfettiView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAConfettiView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,12 +95,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1538B58421F757FA00D44C5C /* SAConfettiView */ = {
+			isa = PBXGroup;
+			children = (
+				1538B58521F757FA00D44C5C /* SAConfettiView.h */,
+				1538B58621F757FA00D44C5C /* Info.plist */,
+			);
+			path = SAConfettiView;
+			sourceTree = "<group>";
+		};
+		1538B59221F7584D00D44C5C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1538B59321F7584D00D44C5C /* confetti.png */,
+				1538B59421F7584D00D44C5C /* .gitkeep */,
+				1538B59521F7584D00D44C5C /* triangle.png */,
+				1538B59621F7584D00D44C5C /* diamond.png */,
+				1538B59721F7584D00D44C5C /* star.png */,
+			);
+			name = Assets;
+			path = ../Pod/Assets;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				1538B59A21F7585A00D44C5C /* confetti.png */,
+				1538B59821F7585A00D44C5C /* diamond.png */,
+				1538B59B21F7585A00D44C5C /* star.png */,
+				1538B59921F7585A00D44C5C /* triangle.png */,
+				1538B59221F7584D00D44C5C /* Assets */,
+				1538B59021F7583800D44C5C /* SAConfettiView.swift */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for SAConfettiView */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				1538B58421F757FA00D44C5C /* SAConfettiView */,
 				607FACD11AFB9204008FA782 /* Products */,
 				EACBC9F94D6B3C947F368762 /* Frameworks */,
 				DC90B5FBCA0883864ECD4A9D /* Pods */,
@@ -174,6 +228,7 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				67B879CB196FAC8DFF07D902 /* [CP] Embed Pods Frameworks */,
 				A9F5973F0AFEEF764ABD2894 /* [CP] Copy Pods Resources */,
+				1538B58F21F757FA00D44C5C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -523,6 +578,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SAConfettiView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -537,6 +593,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SAConfettiView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
