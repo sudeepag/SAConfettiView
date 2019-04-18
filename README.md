@@ -14,16 +14,18 @@ It's raining confetti! SAConfettiView is the easiest way to add fun, multi-color
 
 ## Installation
 
-SAConfettiView is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+#### CocoaPods
+SAConfettiView supports [CocoaPods 1.7.0's new multi-Swift feature](http://blog.cocoapods.org/CocoaPods-1.7.0-beta/) for Swift 4.0, 4.2, and 5.0. Simply specify `supports_swift_versions` in your Podfile.
 
-```swift
-pod "SAConfettiView"
+```ruby
+platform :ios, '9.0'
+target 'ProjectName' do
+use_frameworks!
+supports_swift_versions '< 5.0' # configure this for your project
+    pod 'SAConfettiView', '~> 0.1.9'
+end
 ```
-
-And then run:
-
-`$ pod install`
+*(if you run into problems, `pod repo update` and try again)*
 
 #### Manual Installation
 To manually install SAConfettiView, simply add `SAConfettiView.swift` to your project.
