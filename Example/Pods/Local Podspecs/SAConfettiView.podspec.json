@@ -1,6 +1,6 @@
 {
   "name": "SAConfettiView",
-  "version": "0.1.3",
+  "version": "0.1.8",
   "summary": "Confetti! Who doesn't like confetti?'",
   "description": "SAConfettiView is the quickest way to add confetti to your application and make your users feel rewarded.",
   "homepage": "https://github.com/sudeepag/SAConfettiView",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/sudeepag/SAConfettiView.git",
-    "tag": "0.1.3"
+    "tag": "0.1.8"
   },
   "platforms": {
     "ios": "8.0"
