@@ -12,19 +12,19 @@ import QuartzCore
 open class ConfettiView: UIView {
 
     public struct Options {
-        var birthRate: Float = 6
-        var lifetime: Float = 14.0
-        var lifetimeRange: Float = 0
-        var alphaRange: Float = 0
-        var alphaSpeed: Float = 0
-        var velocity: Float = 350.0
-        var velocityRange: Float = 80.0
-        var emissionLongitude: Double = Double.pi
-        var emissionRange: Double = Double.pi
-        var spin: Float = 3.5
-        var spinRange: Float = 4.0
-        var scaleRange: Float = 1
-        var scaleSpeed: Float = -0.1
+        public var birthRate: Float = 6
+        public var lifetime: Float = 14.0
+        public var lifetimeRange: Float = 0
+        public var alphaRange: Float = 0
+        public var alphaSpeed: Float = 0
+        public var velocity: Float = 350.0
+        public var velocityRange: Float = 80.0
+        public var emissionLongitude: Double = Double.pi
+        public var emissionRange: Double = Double.pi
+        public var spin: Float = 3.5
+        public var spinRange: Float = 4.0
+        public var scaleRange: Float = 1
+        public var scaleSpeed: Float = -0.1
     }
     
     public static var defaultOptions = Options()

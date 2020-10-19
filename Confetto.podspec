@@ -6,7 +6,7 @@
 
 Pod::Spec.new do |s|
   s.name = "Confetto"
-  s.version = "0.2.0"
+  s.version = "0.2.1"
   s.summary = "Confetto! Who doesn't like confetti?'"
   s.description = "Confetto is the quickest way to add confetti to your application and make your users feel rewarded. Forked from ConfettiView"
 
