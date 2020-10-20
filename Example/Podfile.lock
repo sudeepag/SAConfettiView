@@ -1,5 +1,5 @@
 PODS:
-  - Confetto (0.2.0)
+  - Confetto (0.2.2)
 
 DEPENDENCIES:
   - Confetto (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Confetto: 2abc974b63316cef916c9272b78ab0dda1d0a873
+  Confetto: 2ddffb7cffb60a94224e6d00bce75362a8cd21d0
 
 PODFILE CHECKSUM: 272e7e164ae592870482f3dc1cc7785d44168e86
 

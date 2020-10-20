@@ -25,6 +25,9 @@ open class ConfettiView: UIView {
         public var spinRange: Float = 4.0
         public var scaleRange: Float = 1
         public var scaleSpeed: Float = -0.1
+        public var yAcceleration: CGFloat = 0
+        public var xAcceleration: CGFloat = 0
+        public var zAcceleration: CGFloat = 0
     }
     
     public static var defaultOptions = Options()
@@ -35,6 +38,7 @@ open class ConfettiView: UIView {
         options.lifetime = 10
         options.alphaRange = 8
         options.alphaSpeed = -0.5
+        
         return options
     }()
     
@@ -43,6 +47,7 @@ open class ConfettiView: UIView {
         case triangle
         case star
         case diamond
+        case rectangle
         case image(UIImage)
     }
 
@@ -73,9 +78,9 @@ open class ConfettiView: UIView {
         active = false
     }
     
-    open func burst(complete: (() -> Void)? = nil) {
+    open func burst(duration: TimeInterval = 0.3, complete: (() -> Void)? = nil) {
         start(options: ConfettiView.burstOptions)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + duration) { [weak self] in
             self?.stop()
             complete?()
         }
@@ -87,8 +92,8 @@ open class ConfettiView: UIView {
 
         emitter.emitterPosition = CGPoint(x: frame.size.width / 2.0, y: 0)
         emitter.emitterShape = .line
-        emitter.emitterSize = CGSize(width: frame.size.width, height: 1)
-        emitter.beginTime = CACurrentMediaTime() - 0.8
+        emitter.emitterSize = CGSize(width: 150, height: 1)
+        emitter.beginTime = CACurrentMediaTime() - 0
         
         var cells = [CAEmitterCell]()
         for color in colors {
@@ -107,23 +112,31 @@ open class ConfettiView: UIView {
 
     func imageForType(_ type: ConfettiType) -> UIImage? {
 
-        var fileName: String!
+        let fileName: String
+        let fileType: String
 
         switch type {
         case .confetti:
             fileName = "confetti"
+            fileType = "png"
         case .triangle:
             fileName = "triangle"
+            fileType = "png"
         case .star:
             fileName = "star"
+            fileType = "png"
         case .diamond:
             fileName = "diamond"
+            fileType = "png"
+        case .rectangle:
+            fileName = "rectangle"
+            fileType = "pdf"
         case let .image(customImage):
             return customImage
         }
 
         let bundle = Bundle(for: ConfettiView.self)
-        let imagePath = bundle.path(forResource: fileName, ofType: "png")
+        let imagePath = bundle.path(forResource: fileName, ofType: fileType)
         let url = URL(fileURLWithPath: imagePath!)
         do {
             let data = try Data(contentsOf: url)
@@ -139,12 +152,12 @@ open class ConfettiView: UIView {
         // Vary each color with a slightly different birth rate so they don't come in waves
         confetti.birthRate = (options.birthRate + Float(arc4random()) / Float(UINT32_MAX)) * intensity
         confetti.lifetime = options.lifetime * intensity
-        confetti.lifetimeRange = 0
+        confetti.lifetimeRange = options.lifetimeRange
         confetti.alphaRange = options.alphaRange * intensity
         confetti.alphaSpeed = options.alphaSpeed * intensity
         confetti.color = color.cgColor
         confetti.velocity = CGFloat(options.velocity * intensity)
-        confetti.velocityRange = CGFloat(options.velocityRange * intensity)
+        confetti.velocityRange = CGFloat(options.velocityRange)
         confetti.emissionLongitude = CGFloat(options.emissionLongitude)
         confetti.emissionRange = CGFloat(options.emissionRange)
         confetti.spin = CGFloat(options.spin * intensity)
@@ -152,6 +165,10 @@ open class ConfettiView: UIView {
         confetti.scaleRange = CGFloat(options.scaleRange * intensity)
         confetti.scaleSpeed = CGFloat(options.scaleSpeed * intensity)
         confetti.contents = imageForType(type)!.cgImage
+        confetti.yAcceleration = options.yAcceleration
+        confetti.zAcceleration = options.zAcceleration
+        confetti.xAcceleration = options.xAcceleration
+        
         return confetti
     }
 
