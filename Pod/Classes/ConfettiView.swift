@@ -28,6 +28,8 @@ open class ConfettiView: UIView {
         public var yAcceleration: CGFloat = 0
         public var xAcceleration: CGFloat = 0
         public var zAcceleration: CGFloat = 0
+        
+        public var width: CGFloat? = nil
     }
     
     public static var defaultOptions = Options()
@@ -92,7 +94,7 @@ open class ConfettiView: UIView {
 
         emitter.emitterPosition = CGPoint(x: frame.size.width / 2.0, y: 0)
         emitter.emitterShape = .line
-        emitter.emitterSize = CGSize(width: 150, height: 1)
+        emitter.emitterSize = CGSize(width: options.width ?? frame.size.width, height: 1)
         emitter.beginTime = CACurrentMediaTime() - 0
         
         var cells = [CAEmitterCell]()
