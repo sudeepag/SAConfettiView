@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         confettiView.isUserInteractionEnabled = false
         
         // Set type
-        confettiView.type = .confetti
+        confettiView.type = .diamond
         
         // For custom image
         // confettiView.type = .Image(UIImage(named: "diamond")!)

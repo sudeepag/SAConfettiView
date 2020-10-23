@@ -17,18 +17,20 @@ open class ConfettiView: UIView {
         public var lifetimeRange: Float = 0
         public var alphaRange: Float = 0
         public var alphaSpeed: Float = 0
-        public var velocity: Float = 350.0
+        public var velocity: Float = 240.0
         public var velocityRange: Float = 80.0
         public var emissionLongitude: Double = Double.pi
         public var emissionRange: Double = Double.pi
         public var spin: Float = 3.5
         public var spinRange: Float = 4.0
+        public var scale: Float?
         public var scaleRange: Float = 1
         public var scaleSpeed: Float = -0.1
         public var yAcceleration: CGFloat = 0
         public var xAcceleration: CGFloat = 0
         public var zAcceleration: CGFloat = 0
         
+        public var preRunTime: CFTimeInterval = 0
         public var width: CGFloat? = nil
     }
     
@@ -95,8 +97,9 @@ open class ConfettiView: UIView {
         emitter.emitterPosition = CGPoint(x: frame.size.width / 2.0, y: 0)
         emitter.emitterShape = .line
         emitter.emitterSize = CGSize(width: options.width ?? frame.size.width, height: 1)
-        emitter.beginTime = CACurrentMediaTime() - 0
-        
+        emitter.beginTime = CACurrentMediaTime() - options.preRunTime
+        emitter.scale = options.scale ?? (1.0 / Float(UIScreen.main.scale))
+            
         var cells = [CAEmitterCell]()
         for color in colors {
             cells.append(confetti(color: color, options: options))
