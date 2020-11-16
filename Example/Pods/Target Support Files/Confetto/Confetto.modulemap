@@ -1,0 +1,6 @@
+framework module Confetto {
+  umbrella header "Confetto-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -13,8 +13,9 @@
     "tag": "0.1.8"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
+  "swift_versions": "5",
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
   "resource_bundles": {
@@ -25,5 +26,6 @@
   "frameworks": [
     "UIKit",
     "QuartzCore"
-  ]
+  ],
+  "swift_version": "5"
 }
