@@ -63,7 +63,7 @@ Pick one of the preconfigured types of confetti with the `.type` property, or cr
 confettiView.type = .confetti
 ```
 
-##### `.Triangle`
+##### `Triangle`
 
 ![triangle](https://cloud.githubusercontent.com/assets/11940172/11819211/9b8b758a-a399-11e5-8ed3-2eb92f633628.gif)
 
@@ -71,7 +71,7 @@ confettiView.type = .confetti
 confettiView.type = .triangle
 ```
 
-##### `.Star`
+##### `Star`
 
 ![star](https://cloud.githubusercontent.com/assets/11940172/11819401/90a2188a-a39a-11e5-8a03-ddca3fb52e72.gif)
 
@@ -79,7 +79,7 @@ confettiView.type = .triangle
 confettiView.type = .star
 ```
 
-##### `.Diamond`
+##### `Diamond`
 
 ![diamond](https://cloud.githubusercontent.com/assets/11940172/11819275/f1c83c08-a399-11e5-8d40-85e9a1879526.gif)
 
@@ -87,7 +87,7 @@ confettiView.type = .star
 confettiView.type = .diamond
 ```
 
-##### `.Image`
+##### `Image`
 
 ![image](https://cloud.githubusercontent.com/assets/11940172/11819363/5f4f0dba-a39a-11e5-826b-d198113f50dd.gif)
 
@@ -138,6 +138,12 @@ confettiView.isActive()
 Returns `true` if it is being displayed, and `false` if it is not.
 
 ## Change Log
+
+### 1.0.9
+* Added support for Swift Package Manager
+* Updated to Swift 5
+* Updated minium target to iOS 12.0
+* Updated Docs 
 
 ### 1.0.8
 * Add `isActive()` method to determine if the confetti is currently active
