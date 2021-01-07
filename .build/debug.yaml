@@ -1,0 +1,107 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "SAConfettiView-debug.module": ["<SAConfettiView-debug.module>"]
+  "SAConfettiViewPackageTests-debug.test": ["<SAConfettiViewPackageTests-debug.test>"]
+  "SAConfettiViewTests-debug.module": ["<SAConfettiViewTests-debug.module>"]
+  "main": ["<SAConfettiView-debug.module>"]
+  "test": ["<SAConfettiView-debug.module>","<SAConfettiViewPackageTests-debug.test>","<SAConfettiViewTests-debug.module>"]
+default: "main"
+nodes:
+  "/Users/mohit/Desktop/SAConfettiView/Sources/":
+    is-directory-structure: true
+  "/Users/mohit/Desktop/SAConfettiView/Tests/":
+    is-directory-structure: true
+commands:
+  "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView_SAConfettiView.bundle/confetti.png":
+    tool: copy-tool
+    inputs: ["/Users/mohit/Desktop/SAConfettiView/Sources/Assets/confetti.png"]
+    outputs: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView_SAConfettiView.bundle/confetti.png"]
+    description: "Copying /Users/mohit/Desktop/SAConfettiView/Sources/Assets/confetti.png"
+
+  "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView_SAConfettiView.bundle/diamond.png":
+    tool: copy-tool
+    inputs: ["/Users/mohit/Desktop/SAConfettiView/Sources/Assets/diamond.png"]
+    outputs: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView_SAConfettiView.bundle/diamond.png"]
+    description: "Copying /Users/mohit/Desktop/SAConfettiView/Sources/Assets/diamond.png"
+
+  "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView_SAConfettiView.bundle/star.png":
+    tool: copy-tool
+    inputs: ["/Users/mohit/Desktop/SAConfettiView/Sources/Assets/star.png"]
+    outputs: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView_SAConfettiView.bundle/star.png"]
+    description: "Copying /Users/mohit/Desktop/SAConfettiView/Sources/Assets/star.png"
+
+  "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView_SAConfettiView.bundle/triangle.png":
+    tool: copy-tool
+    inputs: ["/Users/mohit/Desktop/SAConfettiView/Sources/Assets/triangle.png"]
+    outputs: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView_SAConfettiView.bundle/triangle.png"]
+    description: "Copying /Users/mohit/Desktop/SAConfettiView/Sources/Assets/triangle.png"
+
+  "<SAConfettiView-debug.module>":
+    tool: phony
+    inputs: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/Classes/SAConfettiView.swift.o","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/resource_bundle_accessor.swift.o","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.swiftmodule"]
+    outputs: ["<SAConfettiView-debug.module>"]
+
+  "<SAConfettiViewPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewPackageTests.xctest/Contents/MacOS/SAConfettiViewPackageTests"]
+    outputs: ["<SAConfettiViewPackageTests-debug.test>"]
+
+  "<SAConfettiViewTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewTests.build/SAConfettiViewTests/SAConfettiViewTests.swift.o","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewTests.build/SAConfettiViewTests/XCTestManifests.swift.o","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewTests.swiftmodule"]
+    outputs: ["<SAConfettiViewTests-debug.module>"]
+
+  "C.SAConfettiView-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/mohit/Desktop/SAConfettiView/Sources/Classes/SAConfettiView.swift","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/DerivedSources/resource_bundle_accessor.swift","<SAConfettiView-debug.module-resources>"]
+    outputs: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/Classes/SAConfettiView.swift.o","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/resource_bundle_accessor.swift.o","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "SAConfettiView"
+    module-output-path: "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.swiftmodule"
+    import-paths: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build"
+    objects: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/Classes/SAConfettiView.swift.o","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/resource_bundle_accessor.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-emit-objc-header","-emit-objc-header-path","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/SAConfettiView-Swift.h","-color-diagnostics"]
+    sources: ["/Users/mohit/Desktop/SAConfettiView/Sources/Classes/SAConfettiView.swift","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/DerivedSources/resource_bundle_accessor.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 12
+
+  "C.SAConfettiViewPackageTests-debug.test":
+    tool: shell
+    inputs: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/Classes/SAConfettiView.swift.o","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/resource_bundle_accessor.swift.o","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewTests.build/SAConfettiViewTests/SAConfettiViewTests.swift.o","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewTests.build/SAConfettiViewTests/XCTestManifests.swift.o"]
+    outputs: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewPackageTests.xctest/Contents/MacOS/SAConfettiViewPackageTests"]
+    description: "Linking ./.build/x86_64-apple-macosx/debug/SAConfettiViewPackageTests.xctest/Contents/MacOS/SAConfettiViewPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug","-o","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewPackageTests.xctest/Contents/MacOS/SAConfettiViewPackageTests","-module-name","SAConfettiViewPackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-target","x86_64-apple-macosx10.15","-Xlinker","-add_ast_path","-Xlinker","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewTests.swiftmodule","-L","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.SAConfettiViewTests-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/mohit/Desktop/SAConfettiView/Tests/SAConfettiViewTests/SAConfettiViewTests.swift","/Users/mohit/Desktop/SAConfettiView/Tests/SAConfettiViewTests/XCTestManifests.swift","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.swiftmodule"]
+    outputs: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewTests.build/SAConfettiViewTests/SAConfettiViewTests.swift.o","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewTests.build/SAConfettiViewTests/XCTestManifests.swift.o","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewTests.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "SAConfettiViewTests"
+    module-output-path: "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewTests.swiftmodule"
+    import-paths: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewTests.build"
+    objects: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewTests.build/SAConfettiViewTests/SAConfettiViewTests.swift.o","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiViewTests.build/SAConfettiViewTests/XCTestManifests.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.15","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-color-diagnostics"]
+    sources: ["/Users/mohit/Desktop/SAConfettiView/Tests/SAConfettiViewTests/SAConfettiViewTests.swift","/Users/mohit/Desktop/SAConfettiView/Tests/SAConfettiViewTests/XCTestManifests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 12
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/mohit/Desktop/SAConfettiView/Sources/","/Users/mohit/Desktop/SAConfettiView/Tests/","/Users/mohit/Desktop/SAConfettiView/Package.swift","/Users/mohit/Desktop/SAConfettiView/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
+  "SAConfettiView-debug.module-resources":
+    tool: phony
+    inputs: ["/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView_SAConfettiView.bundle/diamond.png","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView_SAConfettiView.bundle/star.png","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView_SAConfettiView.bundle/confetti.png","/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView_SAConfettiView.bundle/triangle.png"]
+    outputs: ["<SAConfettiView-debug.module-resources>"]
+

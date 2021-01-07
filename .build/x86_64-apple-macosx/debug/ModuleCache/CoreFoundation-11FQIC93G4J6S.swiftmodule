@@ -1,0 +1,28 @@
+---
+path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule'
+dependencies:
+  - mtime:           1606741536000000000
+    path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule'
+    size:            13608
+  - mtime:           1606726604000000000
+    path:            'usr/include/mach-o/dyld.modulemap'
+    size:            71
+    sdk_relative:    true
+  - mtime:           1606726604000000000
+    path:            'usr/include/mach-o/compact_unwind_encoding.modulemap'
+    size:            109
+    sdk_relative:    true
+  - mtime:           1606726603000000000
+    path:            'usr/include/Darwin.apinotes'
+    size:            1133
+    sdk_relative:    true
+  - mtime:           1606726604000000000
+    path:            'usr/include/objc/ObjectiveC.apinotes'
+    size:            11147
+    sdk_relative:    true
+  - mtime:           1606726605000000000
+    path:            'usr/lib/swift/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftinterface'
+    size:            661
+    sdk_relative:    true
+version:         1
+...

@@ -1,0 +1,4 @@
+module SAConfettiView {
+    header "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/SAConfettiView-Swift.h"
+    requires objc
+}

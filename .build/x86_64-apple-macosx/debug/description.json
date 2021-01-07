@@ -1,0 +1,74 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "\/Users\/mohit\/Desktop\/SAConfettiView\/.build\/x86_64-apple-macosx\/debug\/SAConfettiViewPackageTests.xctest\/Contents\/MacOS\/SAConfettiViewPackageTests",
+      "packageName" : "SAConfettiView",
+      "productName" : "SAConfettiViewPackageTests"
+    }
+  ],
+  "copyCommands" : {
+    "\/Users\/mohit\/Desktop\/SAConfettiView\/.build\/x86_64-apple-macosx\/debug\/SAConfettiView_SAConfettiView.bundle\/confetti.png" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/mohit\/Desktop\/SAConfettiView\/Sources\/Assets\/confetti.png"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/mohit\/Desktop\/SAConfettiView\/.build\/x86_64-apple-macosx\/debug\/SAConfettiView_SAConfettiView.bundle\/confetti.png"
+        }
+      ]
+    },
+    "\/Users\/mohit\/Desktop\/SAConfettiView\/.build\/x86_64-apple-macosx\/debug\/SAConfettiView_SAConfettiView.bundle\/diamond.png" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/mohit\/Desktop\/SAConfettiView\/Sources\/Assets\/diamond.png"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/mohit\/Desktop\/SAConfettiView\/.build\/x86_64-apple-macosx\/debug\/SAConfettiView_SAConfettiView.bundle\/diamond.png"
+        }
+      ]
+    },
+    "\/Users\/mohit\/Desktop\/SAConfettiView\/.build\/x86_64-apple-macosx\/debug\/SAConfettiView_SAConfettiView.bundle\/star.png" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/mohit\/Desktop\/SAConfettiView\/Sources\/Assets\/star.png"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/mohit\/Desktop\/SAConfettiView\/.build\/x86_64-apple-macosx\/debug\/SAConfettiView_SAConfettiView.bundle\/star.png"
+        }
+      ]
+    },
+    "\/Users\/mohit\/Desktop\/SAConfettiView\/.build\/x86_64-apple-macosx\/debug\/SAConfettiView_SAConfettiView.bundle\/triangle.png" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/mohit\/Desktop\/SAConfettiView\/Sources\/Assets\/triangle.png"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "\/Users\/mohit\/Desktop\/SAConfettiView\/.build\/x86_64-apple-macosx\/debug\/SAConfettiView_SAConfettiView.bundle\/triangle.png"
+        }
+      ]
+    }
+  },
+  "swiftTargetMap" : {
+    "C.SAConfettiView-debug.module" : "SAConfettiView",
+    "C.SAConfettiViewTests-debug.module" : "SAConfettiViewTests"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}
