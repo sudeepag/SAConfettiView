@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/master.swiftdeps"
+  },
+  "/Users/mohit/Desktop/SAConfettiView/Sources/Classes/SAConfettiView.swift": {
+    "dependencies": "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/Classes/SAConfettiView.d",
+    "object": "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/Classes/SAConfettiView.swift.o",
+    "swiftmodule": "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/Classes/SAConfettiView~partial.swiftmodule",
+    "swift-dependencies": "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/Classes/SAConfettiView.swiftdeps"
+  },
+  "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/resource_bundle_accessor.d",
+    "object": "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/resource_bundle_accessor.swiftdeps"
+  }
+}

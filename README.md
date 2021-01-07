@@ -14,8 +14,9 @@ It's raining confetti! SAConfettiView is the easiest way to add fun, multi-color
 
 ## Installation
 
-SAConfettiView is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+SAConfettiView is available through [CocoaPods](http://cocoapods.org) and [SPM](https://swift.org/package-manager/).
+
+To install it from CocoaPods, Simply add the following line to your Podfile:
 
 ```swift
 pod "SAConfettiView"
@@ -24,6 +25,14 @@ pod "SAConfettiView"
 And then run:
 
 `$ pod install`
+
+To install it as SPM, Simply go to:
+
+`Xcode -> File -> Swift Packages -> Add Package Dependency
+`
+
+Then enter this URL:
+`https://github.com/mohitnandwani/SAConfettiView.git`
 
 #### Manual Installation
 To manually install SAConfettiView, simply add `SAConfettiView.swift` to your project.
@@ -51,39 +60,39 @@ Pick one of the preconfigured types of confetti with the `.type` property, or cr
 ![confetti](https://cloud.githubusercontent.com/assets/11940172/11819440/c9db329e-a39a-11e5-9284-b0171bee0f24.gif)
 
 ```swift
-confettiView.type = .Confetti
+confettiView.type = .confetti
 ```
 
-##### `.Triangle`
+##### `Triangle`
 
 ![triangle](https://cloud.githubusercontent.com/assets/11940172/11819211/9b8b758a-a399-11e5-8ed3-2eb92f633628.gif)
 
 ```swift
-confettiView.type = .Triangle
+confettiView.type = .triangle
 ```
 
-##### `.Star`
+##### `Star`
 
 ![star](https://cloud.githubusercontent.com/assets/11940172/11819401/90a2188a-a39a-11e5-8a03-ddca3fb52e72.gif)
 
 ```swift
-confettiView.type = .Star
+confettiView.type = .star
 ```
 
-##### `.Diamond`
+##### `Diamond`
 
 ![diamond](https://cloud.githubusercontent.com/assets/11940172/11819275/f1c83c08-a399-11e5-8d40-85e9a1879526.gif)
 
 ```swift
-confettiView.type = .Diamond
+confettiView.type = .diamond
 ```
 
-##### `.Image`
+##### `Image`
 
 ![image](https://cloud.githubusercontent.com/assets/11940172/11819363/5f4f0dba-a39a-11e5-826b-d198113f50dd.gif)
 
 ```swift
-confettiView.type = .Image(UIImage(named: "smiley"))
+confettiView.type = .image(UIImage(named: "smiley"))
 ```
 
 ### Colors
@@ -91,7 +100,7 @@ confettiView.type = .Image(UIImage(named: "smiley"))
 Set the colors of the confetti with the `.colors` property. This property has a default value of multiple colors. 
 
 ``` swift
-confettiView.colors = [UIColor.redColor(), UIColor.greenColor(), UIColor.blueColor()]
+confettiView.colors = [UIColor.red, UIColor.green, UIColor.blue]
 ```
 
 ### Intensity
@@ -129,6 +138,12 @@ confettiView.isActive()
 Returns `true` if it is being displayed, and `false` if it is not.
 
 ## Change Log
+
+### 1.0.9
+* Added support for Swift Package Manager
+* Updated to Swift 5
+* Updated minium target to iOS 12.0
+* Updated Docs 
 
 ### 1.0.8
 * Add `isActive()` method to determine if the confetti is currently active

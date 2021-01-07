@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "ac9704dd741dc0c273463952bb820a7d"
+build_time: [1610011171, 976786000]
+inputs:
+  "/Users/mohit/Desktop/SAConfettiView/Sources/Classes/SAConfettiView.swift": [1610009460, 419912523]
+  "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/DerivedSources/resource_bundle_accessor.swift": [1610011171, 948201049]

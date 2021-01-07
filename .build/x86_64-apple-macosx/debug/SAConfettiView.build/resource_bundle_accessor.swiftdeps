@@ -1,0 +1,171 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["So8NSBundleC", ""]
+- ["So8NSBundleC", "module"]
+provides-dynamic-lookup:
+- "module"
+depends-top-level:
+- "!="
+- "+"
+- "Bundle"
+- "FloatLiteralType"
+- "Foundation"
+- "IntegerLiteralType"
+- "StringLiteralType"
+- "TernaryPrecedence"
+- "UnicodeScalarType"
+- "fatalError"
+depends-member:
+- ["SK", ""]
+- ["So8NSBundleC", "Bundle"]
+- ["So8NSBundleC", ""]
+- ["So8NSBundleC", "bundlePath"]
+- ["So8NSBundleC", "fatalError"]
+- ["So8NSBundleC", "init"]
+- ["So8NSBundleC", "main"]
+- ["So8NSBundleC", "module"]
+- ["s7CVarArgP", "Bundle"]
+- ["s7CVarArgP", "bundlePath"]
+- ["s7CVarArgP", "fatalError"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "main"]
+- ["Sl", ""]
+- ["SL", ""]
+- ["s28CustomDebugStringConvertibleP", "Bundle"]
+- ["s28CustomDebugStringConvertibleP", "bundlePath"]
+- ["s28CustomDebugStringConvertibleP", "fatalError"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "main"]
+- ["s23CustomStringConvertibleP", "Bundle"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "appendInterpolation"]
+- ["s23CustomStringConvertibleP", "appendLiteral"]
+- ["s23CustomStringConvertibleP", "bundlePath"]
+- ["s23CustomStringConvertibleP", "fatalError"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "main"]
+- ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- ["s26DefaultStringInterpolationV", "appendLiteral"]
+- ["SQ", "Bundle"]
+- ["SQ", ""]
+- ["SQ", "bundlePath"]
+- ["SQ", "fatalError"]
+- ["SQ", "init"]
+- ["SQ", "main"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- ["s23ExpressibleByNilLiteralP", "init"]
+- ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
+- ["s32ExpressibleByStringInterpolationP", ""]
+- ["s32ExpressibleByStringInterpolationP", "init"]
+- ["s26ExpressibleByStringLiteralP", ""]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- ["SH", "Bundle"]
+- ["SH", ""]
+- ["SH", "bundlePath"]
+- ["SH", "fatalError"]
+- ["SH", "init"]
+- ["SH", "main"]
+- ["s25LosslessStringConvertibleP", ""]
+- ["So8NSCodingP", ""]
+- ["So8NSObjectC", "Bundle"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "bundleForClass"]
+- ["So8NSObjectC", "bundlePath"]
+- ["So8NSObjectC", "bundleWithIdentifier"]
+- ["So8NSObjectC", "bundleWithPath"]
+- ["So8NSObjectC", "bundleWithURL"]
+- ["So8NSObjectC", "fatalError"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "main"]
+- ["So8NSObjectC", "module"]
+- ["So8NSObjectP", "Bundle"]
+- !private ["So8NSObjectP", ""]
+- ["So8NSObjectP", "bundleForClass"]
+- ["So8NSObjectP", "bundlePath"]
+- ["So8NSObjectP", "bundleWithIdentifier"]
+- ["So8NSObjectP", "bundleWithPath"]
+- ["So8NSObjectP", "bundleWithURL"]
+- ["So8NSObjectP", "fatalError"]
+- ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "main"]
+- ["So8NSObjectP", "module"]
+- ["ST", ""]
+- ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- ["s27StringInterpolationProtocolP", "appendLiteral"]
+- ["s27StringInterpolationProtocolP", "init"]
+- ["s16TextOutputStreamP", ""]
+- ["s16TextOutputStreamP", "appendInterpolation"]
+- ["s16TextOutputStreamP", "appendLiteral"]
+- ["s20TextOutputStreamableP", ""]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "bundlePath"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Bundle"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bundlePath"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "fatalError"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
+depends-nominal:
+- "SK"
+- "So8NSBundleC"
+- "s7CVarArgP"
+- "Sl"
+- "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s26DefaultStringInterpolationV"
+- "SQ"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s23ExpressibleByNilLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- "s25LosslessStringConvertibleP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "ST"
+- "s27StringInterpolationProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Users/mohit/Desktop/SAConfettiView/.build/x86_64-apple-macosx/debug/SAConfettiView.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "074eb10674885db7913219544aa2ac98"
