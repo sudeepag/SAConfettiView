@@ -28,8 +28,8 @@ And then run:
 
 To install it as SPM, Simply go to:
 
-```Xcode -> File -> Swift Packages -> Add Package Dependency
-```
+`Xcode -> File -> Swift Packages -> Add Package Dependency
+`
 
 Then enter this URL:
 `https://github.com/mohitnandwani/SAConfettiView.git`
