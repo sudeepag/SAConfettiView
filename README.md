@@ -32,7 +32,7 @@ To install it as SPM, Simply go to:
 ```
 
 Then enter this URL:
-`https://github.com/mohitnandwani/JBCalendarDatePicker.git`
+`https://github.com/mohitnandwani/SAConfettiView.git`
 
 #### Manual Installation
 To manually install SAConfettiView, simply add `SAConfettiView.swift` to your project.
