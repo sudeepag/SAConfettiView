@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SAConfettiView"
-  s.version          = "0.1.8"
+  s.version          = "0.1.9"
   s.summary          = "Confetti! Who doesn't like confetti?'"
 
 # This description is used to generate tags and improve search results.
@@ -30,9 +30,9 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Sources/SAConfettiView/Classes/**/*'
   s.resource_bundles = {
-    'SAConfettiView' => ['Pod/Assets/*.png']
+    'SAConfettiView' => ['Sources/SAConfettiView/Resources/Assets/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

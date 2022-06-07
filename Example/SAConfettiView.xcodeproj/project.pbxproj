@@ -173,7 +173,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				67B879CB196FAC8DFF07D902 /* [CP] Embed Pods Frameworks */,
-				A9F5973F0AFEEF764ABD2894 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,7 +192,6 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				CF6D21F5E4A51DBD3F295412 /* [CP] Embed Pods Frameworks */,
-				CBEC002BFA86E53843BB8DFB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,7 +286,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SAConfettiView_Example/Pods-SAConfettiView_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SAConfettiView_Example/Pods-SAConfettiView_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SAConfettiView/SAConfettiView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -297,37 +295,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SAConfettiView_Example/Pods-SAConfettiView_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A9F5973F0AFEEF764ABD2894 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SAConfettiView_Example/Pods-SAConfettiView_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CBEC002BFA86E53843BB8DFB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SAConfettiView_Tests/Pods-SAConfettiView_Tests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SAConfettiView_Example/Pods-SAConfettiView_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CF6D21F5E4A51DBD3F295412 /* [CP] Embed Pods Frameworks */ = {
@@ -336,7 +304,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SAConfettiView_Tests/Pods-SAConfettiView_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SAConfettiView_Tests/Pods-SAConfettiView_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SAConfettiView/SAConfettiView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -345,7 +313,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SAConfettiView_Tests/Pods-SAConfettiView_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SAConfettiView_Tests/Pods-SAConfettiView_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F94B2FCF47A4B332DDE3AABF /* [CP] Check Pods Manifest.lock */ = {

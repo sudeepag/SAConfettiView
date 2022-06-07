@@ -50,7 +50,11 @@ public class SAConfettiView: UIView {
         emitter = CAEmitterLayer()
 
         emitter.emitterPosition = CGPoint(x: frame.size.width / 2.0, y: 0)
+        #if swift(<4)
         emitter.emitterShape = kCAEmitterLayerLine
+        #else
+        emitter.emitterShape = CAEmitterLayerEmitterShape.line
+        #endif
         emitter.emitterSize = CGSize(width: frame.size.width, height: 1)
 
         var cells = [CAEmitterCell]()
@@ -85,6 +89,11 @@ public class SAConfettiView: UIView {
             return customImage
         }
 
+    
+#if SWIFT_PACKAGE
+      
+        return UIImage(named: fileName, in: .module, compatibleWith: nil)
+#else
         let path = Bundle(for: SAConfettiView.self).path(forResource: "SAConfettiView", ofType: "bundle")
         let bundle = Bundle(path: path!)
         let imagePath = bundle?.path(forResource: fileName, ofType: "png")
@@ -96,6 +105,9 @@ public class SAConfettiView: UIView {
             print(error)
         }
         return nil
+#endif
+        
+        
     }
 
     func confettiWithColor(color: UIColor) -> CAEmitterCell {
